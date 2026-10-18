@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@NamedQuery(name = "Employee.fetchAllEmployees", query = "select e from Employee e")
 public class Employee {
     @Id
     @Column(name = "empno")
